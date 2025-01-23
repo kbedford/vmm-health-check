@@ -1,0 +1,190 @@
+=== Device: PTX1_1_RE0 (10.49.101.241) ===
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---
+
+
+=== Device: PTX2_2_RE0 (10.49.107.198) ===
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---
+
+
+=== Device: PTX3_3_RE0 (10.49.107.194) ===
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---
+
+
+=== Device: PTX4_4_RE0 (10.49.101.232) ===
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---
+
+
+=== Device: vMX1_RE (10.49.101.45) ===
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---
+
+
+=== Device: vMX2_RE (10.49.99.54) ===
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---
+
+
+=== Device: vMX3_RE (10.49.99.121) ===
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---
+
+
+=== Device: vMX4_RE (10.49.99.126) ===
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---
+
+
+=== Device: vRR1_RE (10.49.99.52) ===
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---
+
+
+=== Device: vRR2_RE (10.49.115.92) ===
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---
+
+

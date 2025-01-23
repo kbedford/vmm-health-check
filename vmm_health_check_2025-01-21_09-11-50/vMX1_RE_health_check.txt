@@ -1,0 +1,16 @@
+--- show interfaces terse ---
+
+
+--- show chassis routing-engine ---
+
+
+--- show version ---
+
+
+--- show chassis fpc ---
+
+
+--- show system alarms ---
+
+
+--- show system core-dumps ---

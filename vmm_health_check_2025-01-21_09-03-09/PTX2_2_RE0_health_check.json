@@ -1,0 +1,378 @@
+{
+    "get-bgp-summary-information": {
+        "rpc-reply": {
+            "@message-id": "urn:uuid:974e745a-de45-4356-a26d-8a4d61c80285",
+            "output": "BGP is not running"
+        }
+    },
+    "get-chassis-alarms": "Error executing command: syntax error, expecting <invoke-on>",
+    "get-chassis-fpc-information": {
+        "rpc-reply": {
+            "@message-id": "urn:uuid:66fa4288-af2d-41f8-8e2f-9144c293bdb6",
+            "fpc-information": {
+                "@style": "brief",
+                "fpc": {
+                    "slot": "0",
+                    "state": "Online",
+                    "temperature": "0",
+                    "cpu-total": "2",
+                    "cpu-interrupt": "3",
+                    "cpu-1min-avg": "2",
+                    "cpu-5min-avg": "2",
+                    "cpu-15min-avg": "2",
+                    "memory-dram-size": "16384",
+                    "memory-heap-utilization": "26",
+                    "memory-buffer-utilization": "1"
+                }
+            }
+        }
+    },
+    "get-system-uptime-information": {
+        "rpc-reply": {
+            "@message-id": "urn:uuid:e87034a9-b7e5-498d-b0d7-cdaf6cb1294f",
+            "system-uptime-information": {
+                "current-time": {
+                    "date-time": {
+                        "@seconds": "1737478993",
+                        "#text": "2025-01-21 09:03:13 PST"
+                    }
+                },
+                "time-source": "NTP CLOCK",
+                "node-booted-time": {
+                    "date-time": {
+                        "@seconds": "1737391217",
+                        "#text": "2025-01-20 08:40:17 PST"
+                    },
+                    "time-length": {
+                        "@seconds": "87776",
+                        "#text": "1d 00:22"
+                    }
+                },
+                "system-booted-time": {
+                    "date-time": {
+                        "@seconds": "1737391292",
+                        "#text": "2025-01-20 08:41:32 PST"
+                    },
+                    "time-length": {
+                        "@seconds": "87701",
+                        "#text": "1d 00:21"
+                    }
+                },
+                "protocols-started-time": {
+                    "date-time": {
+                        "@seconds": "1737391305",
+                        "#text": "2025-01-20 08:41:45 PST"
+                    },
+                    "time-length": {
+                        "@seconds": "87688",
+                        "#text": "1d 00:21"
+                    }
+                },
+                "last-configured-time": {
+                    "date-time": {
+                        "@seconds": "1737391284",
+                        "#text": "2025-01-20 08:41:24 PST"
+                    },
+                    "time-length": {
+                        "@seconds": "87709",
+                        "#text": "1d 00:21"
+                    },
+                    "user": "root"
+                },
+                "uptime-information": {
+                    "date-time": {
+                        "@seconds": "1737478993",
+                        "#text": "09:03:13"
+                    },
+                    "up-time": {
+                        "@seconds": "87776",
+                        "#text": "1 day, 22 min"
+                    },
+                    "active-user-count": {
+                        "@format": "0 users",
+                        "#text": "0"
+                    },
+                    "load-average-1": "0.16",
+                    "load-average-5": "0.05",
+                    "load-average-15": "0.01"
+                }
+            }
+        }
+    },
+    "get-chassis-inventory": {
+        "rpc-reply": {
+            "@message-id": "urn:uuid:7e18c2ad-b59a-40ac-9bde-38d12244eb71",
+            "chassis-inventory": {
+                "chassis": {
+                    "@style": "inventory",
+                    "name": "Chassis",
+                    "serial-number": "JN0000000AJA",
+                    "description": "JNP10008 [PTX10008]",
+                    "chassis-module": [
+                        {
+                            "name": "Midplane 0",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "Midplane 8"
+                        },
+                        {
+                            "name": "Routing Engine 0",
+                            "serial-number": "REV EV 1V 14",
+                            "description": "RE VIRTUAL"
+                        },
+                        {
+                            "name": "Routing Engine 1",
+                            "serial-number": "REV EV 1V 14",
+                            "description": "RE VIRTUAL"
+                        },
+                        {
+                            "name": "CB 0",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "Control Board"
+                        },
+                        {
+                            "name": "CB 1",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "Control Board"
+                        },
+                        {
+                            "name": "FPC 0",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "JNP10K-LC1201",
+                            "chassis-sub-module": [
+                                {
+                                    "name": "CPU"
+                                },
+                                {
+                                    "name": "PIC 0",
+                                    "part-number": "BUILTIN",
+                                    "serial-number": "BUILTIN",
+                                    "description": "JNP10K-36QDD-LC-PIC",
+                                    "chassis-sub-sub-module": [
+                                        {
+                                            "name": "Xcvr 1",
+                                            "version": "REV 01",
+                                            "part-number": "740-058732",
+                                            "serial-number": "1DJQA042004",
+                                            "description": "QSFP-100GBASE-LR4"
+                                        },
+                                        {
+                                            "name": "Xcvr 3",
+                                            "version": "REV 01",
+                                            "part-number": "740-058732",
+                                            "serial-number": "1DJQA042004",
+                                            "description": "QSFP-100GBASE-LR4"
+                                        },
+                                        {
+                                            "name": "Xcvr 5",
+                                            "version": "REV 01",
+                                            "part-number": "740-058732",
+                                            "serial-number": "1DJQA042004",
+                                            "description": "QSFP-100GBASE-LR4"
+                                        },
+                                        {
+                                            "name": "Xcvr 7",
+                                            "version": "REV 01",
+                                            "part-number": "740-058732",
+                                            "serial-number": "1DJQA042004",
+                                            "description": "QSFP-100GBASE-LR4"
+                                        },
+                                        {
+                                            "name": "Xcvr 9",
+                                            "version": "REV 01",
+                                            "part-number": "740-058732",
+                                            "serial-number": "1DJQA042004",
+                                            "description": "QSFP-100GBASE-LR4"
+                                        },
+                                        {
+                                            "name": "Xcvr 11",
+                                            "version": "REV 01",
+                                            "part-number": "740-058732",
+                                            "serial-number": "1DJQA042004",
+                                            "description": "QSFP-100GBASE-LR4"
+                                        },
+                                        {
+                                            "name": "Xcvr 13",
+                                            "version": "REV 01",
+                                            "part-number": "740-058732",
+                                            "serial-number": "1DJQA042004",
+                                            "description": "QSFP-100GBASE-LR4"
+                                        },
+                                        {
+                                            "name": "Xcvr 15",
+                                            "version": "REV 01",
+                                            "part-number": "740-058732",
+                                            "serial-number": "1DJQA042004",
+                                            "description": "QSFP-100GBASE-LR4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "MEZZ 0",
+                                    "version": "REV 03",
+                                    "part-number": "711-084968",
+                                    "serial-number": "BCAY0465",
+                                    "description": "JNP10K-LC1201 MEZZ Board"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SIB 0",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "SIB-JNP10008"
+                        },
+                        {
+                            "name": "SIB 1",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "SIB-JNP10008"
+                        },
+                        {
+                            "name": "SIB 2",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "SIB-JNP10008"
+                        },
+                        {
+                            "name": "SIB 3",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "SIB-JNP10008"
+                        },
+                        {
+                            "name": "SIB 4",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "SIB-JNP10008"
+                        },
+                        {
+                            "name": "SIB 5",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "SIB-JNP10008"
+                        },
+                        {
+                            "name": "Fan Tray 0",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "Fan tray 8"
+                        },
+                        {
+                            "name": "Fan Tray 1",
+                            "part-number": "BUILTIN",
+                            "serial-number": "BUILTIN",
+                            "description": "Fan tray 8"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "get-chassis-routing-engine-information": {
+        "rpc-reply": {
+            "@message-id": "urn:uuid:06d2fe5a-e2cc-44c4-92f1-bf76c0238db2",
+            "route-engine-information": {
+                "route-engine": [
+                    {
+                        "slot": "0",
+                        "mastership-state": "Master",
+                        "mastership-priority": "Master (default)",
+                        "status": "OK",
+                        "temperature": {
+                            "@celsius": "0",
+                            "#text": "0 degrees C / 32 degrees F"
+                        },
+                        "memory-dram-size": "12055 MB",
+                        "memory-installed-size": "(16384 MB installed)",
+                        "memory-buffer-utilization": "26",
+                        "cpu-user": "0",
+                        "cpu-background": "0",
+                        "cpu-system": "1",
+                        "cpu-interrupt": "1",
+                        "cpu-idle": "98",
+                        "cpu-user1": "1",
+                        "cpu-background1": "0",
+                        "cpu-system1": "1",
+                        "cpu-interrupt1": "1",
+                        "cpu-idle1": "98",
+                        "cpu-user2": "1",
+                        "cpu-background2": "0",
+                        "cpu-system2": "1",
+                        "cpu-interrupt2": "1",
+                        "cpu-idle2": "97",
+                        "cpu-user3": "1",
+                        "cpu-background3": "0",
+                        "cpu-system3": "1",
+                        "cpu-interrupt3": "1",
+                        "cpu-idle3": "97",
+                        "model": "RE VIRTUAL",
+                        "serial-number": "REV EV 1V 14",
+                        "start-time": {
+                            "@seconds": "1737391200",
+                            "#text": "2025-01-20 08:40:00 PST"
+                        },
+                        "up-time": {
+                            "@seconds": "87684",
+                            "#text": "1 day, 21 minutes, 24 seconds"
+                        },
+                        "load-average-one": "0.16",
+                        "load-average-five": "0.05",
+                        "load-average-fifteen": "0.01",
+                        "last-reboot-reason": "Unknown"
+                    },
+                    {
+                        "slot": "1",
+                        "mastership-state": "Backup",
+                        "mastership-priority": "Backup (default)",
+                        "status": "OK",
+                        "temperature": {
+                            "@celsius": "0",
+                            "#text": "0 degrees C / 32 degrees F"
+                        },
+                        "memory-dram-size": "13436 MB",
+                        "memory-installed-size": "(16384 MB installed)",
+                        "memory-buffer-utilization": "17",
+                        "cpu-user": "0",
+                        "cpu-background": "0",
+                        "cpu-system": "1",
+                        "cpu-interrupt": "0",
+                        "cpu-idle": "98",
+                        "cpu-user1": "0",
+                        "cpu-background1": "0",
+                        "cpu-system1": "1",
+                        "cpu-interrupt1": "0",
+                        "cpu-idle1": "98",
+                        "cpu-user2": "0",
+                        "cpu-background2": "0",
+                        "cpu-system2": "1",
+                        "cpu-interrupt2": "0",
+                        "cpu-idle2": "98",
+                        "cpu-user3": "0",
+                        "cpu-background3": "0",
+                        "cpu-system3": "1",
+                        "cpu-interrupt3": "0",
+                        "cpu-idle3": "98",
+                        "model": "RE VIRTUAL",
+                        "serial-number": "REV EV 1V 14",
+                        "start-time": {
+                            "@seconds": "1737391200",
+                            "#text": "2025-01-20 08:40:00 PST"
+                        },
+                        "up-time": {
+                            "@seconds": "87673",
+                            "#text": "1 day, 21 minutes, 13 seconds"
+                        },
+                        "load-average-one": "0.01",
+                        "load-average-five": "0.33",
+                        "load-average-fifteen": "0.53",
+                        "last-reboot-reason": "Unknown"
+                    }
+                ]
+            }
+        }
+    }
+}

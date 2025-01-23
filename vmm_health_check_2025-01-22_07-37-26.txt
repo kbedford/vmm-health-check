@@ -1,0 +1,574 @@
+=== Device: PTX1_1_RE0 (10.49.101.241) ===
+--- show interfaces terse ---
+--- JUNOS 23.4R2.14-EVO Linux (none) 5.2.60-yocto-standard-g25b2b83 #1 SMP PREEMPT Thu May 9 14:43:29 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+show interfaces terse
+[vrf:none] root@PTX1-1-RE0-re0:~# cli
+{master}
+root@PTX1-1-RE0-re0> show interfaces
+
+--- show chassis routing-engine ---
+terse 
+Interface               Admin Link Proto    Local                 Remote
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+et-0/0/1                up    up
+et-0/0/1.16386          up    up   multiservice
+et-0/0/3                up    up
+et-0/0/3.16386          up    up   multiservice
+et-0/0/5                up    up
+et-0/0/5.16386          up    up   multiservice
+et-0/0/7                up    up
+et-0/0/7.16386          up    up   multiservice
+et-0/0/9                up    up
+et-0/0/9.16386          up    up   multiservice
+et-0/0/11               up    up
+et-0/0/11.16386         up    up   multiservice
+et-0/0/13               up    up
+et-0/0/13.16386         up    up   multiservice
+et-0/0/15               up    up
+et-0/0/15.16386         up    up   multiservice
+re0:mgmt-0              up    up
+re0:mgmt-0.0            up    up   inet     10.49.101.241/19
+re1:mgmt-0              up    up
+re1:mgmt-0.0            up    up   inet     10.49.107.51/19 
+---(more)---                                        Filename: how chassis routing-engine
+Wrote 42 lines of output to 'how chassis routing-engine'
+---(more 54%)---
+
+--- show version ---
+Filename: how version
+Wrote 42 lines of output to 'how version'
+---(more 54%)---
+
+--- show chassis fpc ---
+Filename: how chassis fpc
+Wrote 42 lines of output to 'how chassis fpc'
+---(more 54%)---
+
+--- show system alarms ---
+Filename: how system alarms
+Wrote 42 lines of output to 'how system alarms'
+---(more 54%)---
+
+--- show system core-dumps ---
+Filename: how system core-dumps
+Wrote 42 lines of output to 'how system core-dumps'
+---(more 54%)---
+
+
+=== Device: PTX2_2_RE0 (10.49.107.198) ===
+--- show interfaces terse ---
+show interfaces terse
+--- JUNOS 23.4R2.14-EVO Linux (none) 5.2.60-yocto-standard-g25b2b83 #1 SMP PREEMPT Thu May 9 14:43:29 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+[vrf:none] root@PTX2-2-RE0-re0:~# cli
+{master}
+root@PTX2-2-RE0-re0> show interfaces
+
+--- show chassis routing-engine ---
+terse 
+Interface               Admin Link Proto    Local                 Remote
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+et-0/0/1                up    up
+et-0/0/1.16386          up    up   multiservice
+et-0/0/3                up    up
+et-0/0/3.16386          up    up   multiservice
+et-0/0/5                up    up
+et-0/0/5.16386          up    up   multiservice
+et-0/0/7                up    up
+et-0/0/7.16386          up    up   multiservice
+et-0/0/9                up    up
+et-0/0/9.16386          up    up   multiservice
+et-0/0/11               up    up
+et-0/0/11.16386         up    up   multiservice
+et-0/0/13               up    up
+et-0/0/13.16386         up    up   multiservice
+et-0/0/15               up    up
+et-0/0/15.16386         up    up   multiservice
+re0:mgmt-0              up    up
+re0:mgmt-0.0            up    up   inet     10.49.107.198/19
+re1:mgmt-0              up    up
+re1:mgmt-0.0            up    up   inet     10.49.101.234/19
+---(more)---                                        Filename: how chassis routing-engine
+Wrote 42 lines of output to 'how chassis routing-engine'
+---(more 54%)---
+
+--- show version ---
+Filename: how version
+Wrote 42 lines of output to 'how version'
+---(more 54%)---
+
+--- show chassis fpc ---
+Filename: how chassis fpc
+Wrote 42 lines of output to 'how chassis fpc'
+---(more 54%)---
+
+--- show system alarms ---
+Filename: how system alarms
+Wrote 42 lines of output to 'how system alarms'
+---(more 54%)---
+
+--- show system core-dumps ---
+Filename: how system core-dumps
+Wrote 42 lines of output to 'how system core-dumps'
+---(more 54%)---
+
+
+=== Device: PTX3_3_RE0 (10.49.107.194) ===
+--- show interfaces terse ---
+show interfaces terse
+--- JUNOS 23.4R2.14-EVO Linux (none) 5.2.60-yocto-standard-g25b2b83 #1 SMP PREEMPT Thu May 9 14:43:29 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+[vrf:none] root@PTX3-3-RE0-re0:~# cli
+{master}
+root@PTX3-3-RE0-re0> show
+
+--- show chassis routing-engine ---
+interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+et-0/0/1                up    up
+et-0/0/1.16386          up    up   multiservice
+et-0/0/3                up    up
+et-0/0/3.16386          up    up   multiservice
+et-0/0/5                up    up
+et-0/0/5.16386          up    up   multiservice
+et-0/0/7                up    up
+et-0/0/7.16386          up    up   multiservice
+et-0/0/9                up    up
+et-0/0/9.16386          up    up   multiservice
+et-0/0/11               up    up
+et-0/0/11.16386         up    up   multiservice
+et-0/0/13               up    up
+et-0/0/13.16386         up    up   multiservice
+et-0/0/15               up    up
+et-0/0/15.16386         up    up   multiservice
+re0:mgmt-0              up    up
+re0:mgmt-0.0            up    up   inet     10.49.107.194/19
+re1:mgmt-0              up    up
+re1:mgmt-0.0            up    up   inet     10.49.102.27/19 
+---(more)---                                        Filename: how chassis routing-engine
+Wrote 42 lines of output to 'how chassis routing-engine'
+---(more 54%)---
+
+--- show version ---
+Filename: how version
+Wrote 42 lines of output to 'how version'
+---(more 54%)---
+
+--- show chassis fpc ---
+Filename: how chassis fpc
+Wrote 42 lines of output to 'how chassis fpc'
+---(more 54%)---
+
+--- show system alarms ---
+Filename: how system alarms
+Wrote 42 lines of output to 'how system alarms'
+---(more 54%)---
+
+--- show system core-dumps ---
+Filename: how system core-dumps
+Wrote 42 lines of output to 'how system core-dumps'
+---(more 54%)---
+
+
+=== Device: PTX4_4_RE0 (10.49.101.232) ===
+--- show interfaces terse ---
+show interfaces terse
+[vrf:none] root@PTX4-4-RE0-re0:~# cli
+{master}
+root@PTX4-4-RE0-re0> show
+
+--- show chassis routing-engine ---
+interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+et-0/0/1                up    up
+et-0/0/1.16386          up    up   multiservice
+et-0/0/3                up    up
+et-0/0/3.16386          up    up   multiservice
+et-0/0/5                up    up
+et-0/0/5.16386          up    up   multiservice
+et-0/0/7                up    up
+et-0/0/7.16386          up    up   multiservice
+et-0/0/9                up    up
+et-0/0/9.16386          up    up   multiservice
+et-0/0/11               up    up
+et-0/0/11.16386         up    up   multiservice
+et-0/0/13               up    up
+et-0/0/13.16386         up    up   multiservice
+et-0/0/15               up    up
+et-0/0/15.16386         up    up   multiservice
+re0:mgmt-0              up    up
+re0:mgmt-0.0            up    up   inet     10.49.101.232/19
+re1:mgmt-0              up    up
+re1:mgmt-0.0            up    up   inet     10.49.101.243/19
+---(more)---                                        Filename: how chassis routing-engine
+Wrote 42 lines of output to 'how chassis routing-engine'
+---(more 54%)---
+
+--- show version ---
+Filename: how version
+Wrote 42 lines of output to 'how version'
+---(more 54%)---
+
+--- show chassis fpc ---
+Filename: how chassis fpc
+Wrote 42 lines of output to 'how chassis fpc'
+---(more 54%)---
+
+--- show system alarms ---
+Filename: how system alarms
+Wrote 42 lines of output to 'how system alarms'
+---(more 54%)---
+
+--- show system core-dumps ---
+Filename: how system core-dumps
+Wrote 42 lines of output to 'how system core-dumps'
+---(more 54%)---
+
+
+=== Device: vMX1_RE (10.49.101.45) ===
+--- show interfaces terse ---
+show interfaces terse
+Last login: Mon Jan 20 08:52:45 2025 from 10.51.245.44
+--- JUNOS 20.3X75-D42.21 Kernel 64-bit  JNPR-11.0-20211117.c779bdc_buil
+root@vMX1_RE:~ # cli
+root@vMX1_RE>
+
+--- show chassis routing-engine ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    down
+ge-0/0/4.16386          up    down
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+---(more)---                                        Filename: how chassis routing-engine
+Wrote 117 lines of output to 'how chassis routing-engine'
+---(more 19%)---
+
+--- show version ---
+Filename: how version
+Wrote 117 lines of output to 'how version'
+---(more 19%)---
+
+--- show chassis fpc ---
+Filename: how chassis fpc
+Wrote 117 lines of output to 'how chassis fpc'
+---(more 19%)---
+
+--- show system alarms ---
+Filename: how system alarms
+Wrote 117 lines of output to 'how system alarms'
+---(more 19%)---
+
+--- show system core-dumps ---
+Filename: how system core-dumps
+Wrote 117 lines of output to 'how system core-dumps'
+---(more 19%)---
+
+
+=== Device: vMX2_RE (10.49.99.54) ===
+--- show interfaces terse ---
+show interfaces terse
+--- JUNOS 20.3X75-D42.21 Kernel 64-bit  JNPR-11.0-20211117.c779bdc_buil
+root@vMX2_RE:~ # cli
+root@vMX2_RE>
+
+--- show chassis routing-engine ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    down
+ge-0/0/4.16386          up    down
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+---(more)---                                        Filename: how chassis routing-engine
+Wrote 117 lines of output to 'how chassis routing-engine'
+---(more 19%)---
+
+--- show version ---
+Filename: how version
+Wrote 117 lines of output to 'how version'
+---(more 19%)---
+
+--- show chassis fpc ---
+Filename: how chassis fpc
+Wrote 117 lines of output to 'how chassis fpc'
+---(more 19%)---
+
+--- show system alarms ---
+Filename: how system alarms
+Wrote 117 lines of output to 'how system alarms'
+---(more 19%)---
+
+--- show system core-dumps ---
+Filename: how system core-dumps
+Wrote 117 lines of output to 'how system core-dumps'
+---(more 19%)---
+
+
+=== Device: vMX3_RE (10.49.99.121) ===
+--- show interfaces terse ---
+--- JUNOS 20.3X75-D42.21 Kernel 64-bit  JNPR-11.0-20211117.c779bdc_buil
+show interfaces terse
+root@vMX3_RE:~ # cli
+root@vMX3_RE>
+
+--- show chassis routing-engine ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    up
+ge-0/0/4.16386          up    up  
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+---(more)---                                        Filename: how chassis routing-engine
+Wrote 117 lines of output to 'how chassis routing-engine'
+---(more 19%)---
+
+--- show version ---
+Filename: how version
+Wrote 117 lines of output to 'how version'
+---(more 19%)---
+
+--- show chassis fpc ---
+Filename: how chassis fpc
+Wrote 117 lines of output to 'how chassis fpc'
+---(more 19%)---
+
+--- show system alarms ---
+Filename: how system alarms
+Wrote 117 lines of output to 'how system alarms'
+---(more 19%)---
+
+--- show system core-dumps ---
+Filename: how system core-dumps
+Wrote 117 lines of output to 'how system core-dumps'
+---(more 19%)---
+
+
+=== Device: vMX4_RE (10.49.99.126) ===
+--- show interfaces terse ---
+show interfaces terse
+--- JUNOS 20.3X75-D42.21 Kernel 64-bit  JNPR-11.0-20211117.c779bdc_buil
+root@vMX4_RE:~ # cli
+root@vMX4_RE>
+
+--- show chassis routing-engine ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    down
+ge-0/0/4.16386          up    down
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+---(more)---                                        Filename: how chassis routing-engine
+Wrote 117 lines of output to 'how chassis routing-engine'
+---(more 19%)---
+
+--- show version ---
+Filename: how version
+Wrote 117 lines of output to 'how version'
+---(more 19%)---
+
+--- show chassis fpc ---
+Filename: how chassis fpc
+Wrote 117 lines of output to 'how chassis fpc'
+---(more 19%)---
+
+--- show system alarms ---
+Filename: how system alarms
+Wrote 117 lines of output to 'how system alarms'
+---(more 19%)---
+
+--- show system core-dumps ---
+Filename: how system core-dumps
+Wrote 117 lines of output to 'how system core-dumps'
+---(more 19%)---
+
+
+=== Device: vRR1_RE (10.49.99.52) ===
+--- show interfaces terse ---
+show interfaces terse
+--- JUNOS 20.3X75-D42.21 Kernel 64-bit  JNPR-11.0-20211117.c779bdc_buil
+root@vRR1_RE:~ # cli
+root@vRR1_RE>
+
+--- show chassis routing-engine ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    up
+ge-0/0/4.16386          up    up  
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+---(more)---                                        Filename: how chassis routing-engine
+Wrote 117 lines of output to 'how chassis routing-engine'
+---(more 19%)---
+
+--- show version ---
+Filename: how version
+Wrote 117 lines of output to 'how version'
+---(more 19%)---
+
+--- show chassis fpc ---
+Filename: how chassis fpc
+Wrote 117 lines of output to 'how chassis fpc'
+---(more 19%)---
+
+--- show system alarms ---
+Filename: how system alarms
+Wrote 117 lines of output to 'how system alarms'
+---(more 19%)---
+
+--- show system core-dumps ---
+Filename: how system core-dumps
+Wrote 117 lines of output to 'how system core-dumps'
+---(more 19%)---
+
+
+=== Device: vRR2_RE (10.49.115.92) ===
+--- show interfaces terse ---
+show interfaces terse
+--- JUNOS 20.3X75-D42.21 Kernel 64-bit  JNPR-11.0-20211117.c779bdc_buil
+root@vRR2_RE:~ # cli
+root@vRR2_RE> show
+
+--- show chassis routing-engine ---
+interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    up
+ge-0/0/4.16386          up    up  
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+---(more)---                                        Filename: how chassis routing-engine
+Wrote 117 lines of output to 'how chassis routing-engine'
+---(more 19%)---
+
+--- show version ---
+Filename: how version
+Wrote 117 lines of output to 'how version'
+---(more 19%)---
+
+--- show chassis fpc ---
+Filename: how chassis fpc
+Wrote 117 lines of output to 'how chassis fpc'
+---(more 19%)---
+
+--- show system alarms ---
+Filename: how system alarms
+Wrote 117 lines of output to 'how system alarms'
+---(more 19%)---
+
+--- show system core-dumps ---
+Filename: how system core-dumps
+Wrote 117 lines of output to 'how system core-dumps'
+---(more 19%)---
+
+

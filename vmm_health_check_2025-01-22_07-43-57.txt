@@ -1,0 +1,2396 @@
+=== Device: PTX1_1_RE0 (10.49.101.241) ===
+--- show interfaces terse ---
+set cli screen-width 0 
+show interfaces terse
+Screen width set to 0
+
+{master}
+root@PTX1-1-RE0-re0> show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+et-0/0/1                up    up
+et-0/0/1.16386          up    up   multiservice
+et-0/0/3                up    up
+et-0/0/3.16386          up    up   multiservice
+et-0/0/5                up    up
+et-0/0/5.16386          up    up   multiservice
+et-0/0/7                up    up
+et-0/0/7.16386          up    up   multiservice
+et-0/0/9                up    up
+et-0/0/9.16386          up    up   multiservice
+et-0/0/11               up    up
+et-0/0/11.16386         up    up   multiservice
+et-0/0/13               up    up
+et-0/0/13.16386         up    up   multiservice
+et-0/0/15               up    up
+et-0/0/15.16386         up    up   multiservice
+re0:mgmt-0              up    up
+re0:mgmt-0.0            up    up   inet     10.49.101.241/19
+re1:mgmt-0              up    up
+re1:mgmt-0.0            up    up   inet     10.49.107.51/19 
+dsc                     up    up
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+irb                     up    up
+lo0                     up    up
+lo0.0                   up    up   inet     128.49.101.241      --> 0/0
+                                   iso      47.0005.80ff.f800.0000.0108.0001.1280.4910.1241.00
+                                   inet6    abcd::128:49:101:241-->  
+                                            fe80::5604:af0:31:65f1-->  
+lsi                     up    up
+pip0                    up    up
+vtep                    up    up
+
+{master}
+root@PTX1-1-RE0-re0>
+
+--- show chassis routing-engine ---
+show chassis routing-engine 
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    Temperature                 0 degrees C / 32 degrees F
+    DRAM                      11568 MB (16384 MB installed)
+    Memory utilization          29 percent
+    5 sec CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    1 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    5 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    15 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    Model                          RE VIRTUAL
+    Serial ID                      REV EV 1V 14
+    Start time                     2025-01-20 08:40:00 PST
+    Uptime                         1 day, 23 hours, 2 minutes, 16 seconds
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.00       0.01       0.00
+    Last reboot reason             Unknown
+Routing Engine status:
+  Slot 1:
+    Current state                  Backup
+    Election priority              Backup (default)
+    Temperature                 0 degrees C / 32 degrees F
+    DRAM                      13212 MB (16384 MB installed)
+    Memory utilization          19 percent
+    5 sec CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    1 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    5 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    15 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    Model                          RE VIRTUAL
+    Serial ID                      REV EV 1V 14
+    Start time                     2025-01-20 08:40:00 PST
+    Uptime                         1 day, 23 hours, 1 minute, 59 seconds
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.12       0.98       0.59
+    Last reboot reason             Unknown
+
+{master}
+root@PTX1-1-RE0-re0>
+
+--- show version ---
+show version 
+Hostname: PTX1-1-RE0-re0
+Model: ptx10008
+Junos: 23.4R2.14-EVO
+Yocto: 3.0.2
+Linux Kernel: 5.2.60-yocto-standard-g25b2b83
+JUNOS-EVO OS 64-bit [junos-evo-install-ptx-x86-64-23.4R2.14-EVO]
+
+{master}
+root@PTX1-1-RE0-re0>
+
+--- show chassis fpc ---
+show chassis fpc 
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online             0      2          3        2      2      2    16384      27          1
+
+{master}
+root@PTX1-1-RE0-re0>
+
+--- show system alarms ---
+show system alarms 
+0 alarms currently active
+
+{master}
+root@PTX1-1-RE0-re0>
+
+--- show system core-dumps ---
+show system core-dumps 
+re0:
+--------------------------------------------------------------------------
+
+re1:
+--------------------------------------------------------------------------
+
+{master}
+root@PTX1-1-RE0-re0>
+
+
+=== Device: PTX2_2_RE0 (10.49.107.198) ===
+--- show interfaces terse ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+et-0/0/1                up    up
+et-0/0/1.16386          up    up   multiservice
+et-0/0/3                up    up
+et-0/0/3.16386          up    up   multiservice
+et-0/0/5                up    up
+et-0/0/5.16386          up    up   multiservice
+et-0/0/7                up    up
+et-0/0/7.16386          up    up   multiservice
+et-0/0/9                up    up
+et-0/0/9.16386          up    up   multiservice
+et-0/0/11               up    up
+et-0/0/11.16386         up    up   multiservice
+et-0/0/13               up    up
+et-0/0/13.16386         up    up   multiservice
+et-0/0/15               up    up
+et-0/0/15.16386         up    up   multiservice
+re0:mgmt-0              up    up
+re0:mgmt-0.0            up    up   inet     10.49.107.198/19
+re1:mgmt-0              up    up
+re1:mgmt-0.0            up    up   inet     10.49.101.234/19
+dsc                     up    up
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+irb                     up    up
+lo0                     up    up
+lo0.0                   up    up   inet     128.49.107.198      --> 0/0
+                                   iso      47.0005.80ff.f800.0000.0108.0001.1280.4910.7198.00
+                                   inet6    abcd::128:49:107:198-->
+
+--- show chassis routing-engine ---
+fe80::5604:af0:31:6bc6-->  
+lsi                     up    up
+pip0                    up    up
+vtep                    up    up
+
+{master}
+root@PTX2-2-RE0-re0>
+
+--- show version ---
+show chassis routing-engine 
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    Temperature                 0 degrees C / 32 degrees F
+    DRAM                      12048 MB (16384 MB installed)
+    Memory utilization          26 percent
+    5 sec CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      97 percent
+    1 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      97 percent
+    5 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      97 percent
+    15 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      97 percent
+    Model                          RE VIRTUAL
+    Serial ID                      REV EV 1V 14
+    Start time                     2025-01-20 08:40:00 PST
+    Uptime                         1 day, 23 hours, 2 minutes, 9 seconds
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.05       0.03       0.00
+    Last reboot reason             Unknown
+Routing Engine status:
+  Slot 1:
+    Current state                  Backup
+    Election priority              Backup (default)
+    Temperature                 0 degrees C / 32 degrees F
+    DRAM                      13454 MB (16384 MB installed)
+    Memory utilization          17 percent
+    5 sec CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    1 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    5 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    15 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    Model                          RE VIRTUAL
+    Serial ID                      REV EV 1V 14
+    Start time                     2025-01-20 08:40:00 PST
+    Uptime                         1 day, 23 hours, 1 minute, 58 seconds
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.37       0.10       0.07
+    Last reboot reason             Unknown
+
+{master}
+root@PTX2-2-RE0-re0> show version 
+Hostname: PTX2-2-RE0-re0
+Model: ptx10008
+Junos: 23.4R2.14-EVO
+Yocto: 3.0.2
+Linux Kernel: 5.2.60-yocto-standard-g25b2b83
+JUNOS-EVO OS 64-bit [junos-evo-install-ptx-x86-64-23.4R2.14-EVO]
+
+{master}
+root@PTX2-2-RE0-re0>
+
+--- show chassis fpc ---
+show chassis fpc 
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online             0      2          2        2      2      2    16384      26          1
+
+{master}
+root@PTX2-2-RE0-re0>
+
+--- show system alarms ---
+show system alarms 
+0 alarms currently active
+
+{master}
+root@PTX2-2-RE0-re0>
+
+--- show system core-dumps ---
+show system core-dumps 
+re0:
+--------------------------------------------------------------------------
+
+re1:
+--------------------------------------------------------------------------
+
+{master}
+root@PTX2-2-RE0-re0>
+
+
+=== Device: PTX3_3_RE0 (10.49.107.194) ===
+--- show interfaces terse ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+et-0/0/1                up    up
+et-0/0/1.16386          up    up   multiservice
+et-0/0/3                up    up
+et-0/0/3.16386          up    up   multiservice
+et-0/0/5                up    up
+et-0/0/5.16386          up    up   multiservice
+et-0/0/7                up    up
+et-0/0/7.16386          up    up   multiservice
+et-0/0/9                up    up
+et-0/0/9.16386          up    up   multiservice
+et-0/0/11               up    up
+et-0/0/11.16386         up    up   multiservice
+et-0/0/13               up    up
+et-0/0/13.16386         up    up   multiservice
+et-0/0/15               up    up
+et-0/0/15.16386         up    up   multiservice
+re0:mgmt-0              up    up
+re0:mgmt-0.0            up    up   inet     10.49.107.194/19
+re1:mgmt-0              up    up
+re1:mgmt-0.0            up    up   inet     10.49.102.27/19 
+dsc                     up    up
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+irb                     up    up
+lo0                     up    up
+lo0.0                   up    up   inet     128.49.107.194      --> 0/0
+                                   iso      47.0005.80ff.f800.0000.0108.0001.1280.4910.7194.00
+                                   inet6    abcd::128:49:107:194-->
+
+--- show chassis routing-engine ---
+fe80::5604:af0:31:6bc2-->
+
+--- show version ---
+lsi                     up    up
+pip0                    up    up
+vtep                    up    up
+
+{master}
+root@PTX3-3-RE0-re0>
+
+--- show chassis fpc ---
+show chassis routing-engine 
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    Temperature                 0 degrees C / 32 degrees F
+    DRAM                      11773 MB (16384 MB installed)
+    Memory utilization          28 percent
+    5 sec CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    1 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      97 percent
+    5 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    15 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    Model                          RE VIRTUAL
+    Serial ID                      REV EV 1V 14
+    Start time                     2025-01-20 08:40:00 PST
+    Uptime                         1 day, 23 hours, 2 minutes, 15 seconds
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.03       0.02       0.00
+    Last reboot reason             Unknown
+Routing Engine status:
+  Slot 1:
+    Current state                  Backup
+    Election priority              Backup (default)
+    Temperature                 0 degrees C / 32 degrees F
+    DRAM                      13163 MB (16384 MB installed)
+    Memory utilization          19 percent
+    5 sec CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    1 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    5 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    15 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    Model                          RE VIRTUAL
+    Serial ID                      REV EV 1V 14
+    Start time                     2025-01-20 08:41:00 PST
+    Uptime                         1 day, 23 hours, 1 minute, 36 seconds
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.03       0.12       0.22
+    Last reboot reason             Unknown
+
+{master}
+root@PTX3-3-RE0-re0> show version 
+Hostname: PTX3-3-RE0-re0
+Model: ptx10008
+Junos: 23.4R2.14-EVO
+Yocto: 3.0.2
+Linux Kernel: 5.2.60-yocto-standard-g25b2b83
+JUNOS-EVO OS 64-bit [junos-evo-install-ptx-x86-64-23.4R2.14-EVO]
+
+{master}
+root@PTX3-3-RE0-re0> show chassis fpc 
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online             0      2          2        2      2      2    16384      27          1
+
+{master}
+root@PTX3-3-RE0-re0>
+
+--- show system alarms ---
+show system alarms 
+0 alarms currently active
+
+{master}
+root@PTX3-3-RE0-re0>
+
+--- show system core-dumps ---
+show system core-dumps 
+re0:
+--------------------------------------------------------------------------
+
+re1:
+--------------------------------------------------------------------------
+
+{master}
+root@PTX3-3-RE0-re0>
+
+
+=== Device: PTX4_4_RE0 (10.49.101.232) ===
+--- show interfaces terse ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+et-0/0/1                up    up
+et-0/0/1.16386          up    up   multiservice
+et-0/0/3                up    up
+et-0/0/3.16386          up    up   multiservice
+et-0/0/5                up    up
+et-0/0/5.16386          up    up   multiservice
+et-0/0/7                up    up
+et-0/0/7.16386          up    up   multiservice
+et-0/0/9                up    up
+et-0/0/9.16386          up    up   multiservice
+et-0/0/11               up    up
+et-0/0/11.16386         up    up   multiservice
+et-0/0/13               up    up
+et-0/0/13.16386         up    up   multiservice
+et-0/0/15               up    up
+et-0/0/15.16386         up    up   multiservice
+re0:mgmt-0              up    up
+re0:mgmt-0.0            up    up   inet     10.49.101.232/19
+re1:mgmt-0              up    up
+re1:mgmt-0.0            up    up   inet     10.49.101.243/19
+dsc                     up    up
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+irb                     up    up
+lo0                     up    up
+lo0.0                   up    up   inet     128.49.101.232      --> 0/0
+                                   iso      47.0005.80ff.f800.0000.0108.0001.1280.4910.1232.00
+                                   inet6    abcd::128:49:101:232-->  
+                                            fe80::5604:af0:31:65e8-->  
+lsi                     up    up
+pip0                    up    up
+vtep                    up    up
+
+{master}
+root@PTX4-4-RE0-re0>
+
+--- show chassis routing-engine ---
+show chassis routing-engine 
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    Temperature                 0 degrees C / 32 degrees F
+    DRAM                      11596 MB (16384 MB installed)
+    Memory utilization          29 percent
+    5 sec CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      97 percent
+    1 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      97 percent
+    5 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      97 percent
+    15 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      97 percent
+    Model                          RE VIRTUAL
+    Serial ID                      REV EV 1V 14
+    Start time                     2025-01-20 08:40:00 PST
+    Uptime                         1 day, 23 hours, 2 minutes, 11 seconds
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.22       0.83       1.01
+    Last reboot reason             Unknown
+Routing Engine status:
+  Slot 1:
+    Current state                  Backup
+    Election priority              Backup (default)
+    Temperature                 0 degrees C / 32 degrees F
+    DRAM                      13455 MB (16384 MB installed)
+    Memory utilization          17 percent
+    5 sec CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    1 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      97 percent
+    5 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    15 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  1 percent
+      Idle                      98 percent
+    Model                          RE VIRTUAL
+    Serial ID                      REV EV 1V 14
+    Start time                     2025-01-21 17:36:00 PST
+    Uptime                         14 hours, 6 minutes, 54 seconds
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.01       0.04       0.09
+    Last reboot reason             Unknown
+
+{master}
+root@PTX4-4-RE0-re0>
+
+--- show version ---
+show version 
+Hostname: PTX4-4-RE0-re0
+Model: ptx10008
+Junos: 23.4R2.14-EVO
+Yocto: 3.0.2
+Linux Kernel: 5.2.60-yocto-standard-g25b2b83
+JUNOS-EVO OS 64-bit [junos-evo-install-ptx-x86-64-23.4R2.14-EVO]
+
+{master}
+root@PTX4-4-RE0-re0>
+
+--- show chassis fpc ---
+show chassis fpc 
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online             0      2          2        2      2      2    16384      26          1
+
+{master}
+root@PTX4-4-RE0-re0>
+
+--- show system alarms ---
+show system alarms 
+0 alarms currently active
+
+{master}
+root@PTX4-4-RE0-re0>
+
+--- show system core-dumps ---
+show system core-dumps 
+re0:
+--------------------------------------------------------------------------
+
+re1:
+--------------------------------------------------------------------------
+
+{master}
+root@PTX4-4-RE0-re0>
+
+
+=== Device: vMX1_RE (10.49.101.45) ===
+--- show interfaces terse ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    down
+ge-0/0/4.16386          up    down
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+ge-0/0/6                up    down
+ge-0/0/6.16386          up    down
+ge-0/0/7                up    down
+ge-0/0/7.16386          up    down
+ge-0/0/8                up    down
+ge-0/0/8.16386          up    down
+ge-0/0/9                up    down
+ge-0/0/9.16386          up    down
+gr-0/0/10               up    up
+ip-0/0/10               up    up
+lt-0/0/10               up    up
+mt-0/0/10               up    up
+pd-0/0/10               up    up
+pe-0/0/10               up    up
+ud-0/0/10               up    up
+ut-0/0/10               up    up
+vt-0/0/10               up    up
+ge-0/1/0                up    down
+ge-0/1/0.16386          up    down
+ge-0/1/1                up    down
+ge-0/1/1.16386          up    down
+ge-0/1/2                up    down
+ge-0/1/2.16386          up    down
+ge-0/1/3                up    down
+ge-0/1/3.16386          up    down
+ge-0/1/4                up    down
+ge-0/1/4.16386          up    down
+ge-0/1/5                up    down
+ge-0/1/5.16386          up    down
+ge-0/1/6                up    down
+ge-0/1/6.16386          up    down
+ge-0/1/7                up    down
+ge-0/1/7.16386          up    down
+ge-0/1/8                up    down
+ge-0/1/8.16386          up    down
+ge-0/1/9                up    down
+ge-0/1/9.16386          up    down
+xe-0/2/0                up    down
+xe-0/2/0.16386          up    down
+xe-0/2/1                up    down
+xe-0/2/1.16386          up    down
+xe-0/3/0                up    down
+xe-0/3/0.16386          up    down
+xe-0/3/1                up    down
+xe-0/3/1.16386          up    down
+cbp0                    up    up
+demux0                  up    up
+dsc                     up    up
+em1                     up    up
+em1.0                   up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::5604:5ff:fe00:7e98/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+em2                     up    up
+em2.32768               up    up   inet     192.168.1.2/24  
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+fxp0                    up    up
+fxp0.0                  up    up   inet     10.49.101.45/19 
+gre                     up    up
+ipip                    up    up
+irb                     up    up
+jsrv                    up    up
+jsrv.1                  up    up   inet     128.0.0.127/2   
+lo0                     up    up
+lo0.0                   up    up   inet     128.49.101.45       --> 0/0
+                                   iso      47.0005.80ff.f800.0000.0108.0001.1280.4910.1045
+                                   inet6    abcd::128:49:101:45
+                                            fe80::5604:a0f:fc31:652d
+lo0.1                   up    up   inet     20.100.0.1          --> 0/0
+lo0.2                   up    up   inet     20.101.0.1          --> 0/0
+                                            20.101.0.2          --> 0/0
+                                   mpls    
+lo0.16384               up    up   inet     127.0.0.1           --> 0/0
+lo0.16385               up    up   inet    
+lsi                     up    up
+mif                     up    up
+mtun                    up    up
+pimd                    up    up
+pime                    up    up
+pip0                    up    up
+pp0                     up    up
+rbeb                    up    up
+tap                     up    up
+vtep                    up    up
+
+root@vMX1_RE>
+
+--- show chassis routing-engine ---
+show chassis routing-engine 
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    DRAM                      4046 MB (4096 MB installed)
+    Memory utilization          10 percent
+    5 sec CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    1 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    5 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    15 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    Model                          RE-VMX
+    Serial ID                      f4ba18c8-d7
+    Start time                     2025-01-20 08:40:10 PST
+    Uptime                         1 day, 23 hours, 3 minutes, 49 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.65       0.46       0.37
+
+root@vMX1_RE>
+
+--- show version ---
+show version 
+Hostname: vMX1_RE
+Model: mx960
+Junos: 20.3X75-D42.21
+JUNOS OS Kernel 64-bit  [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS libs [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS time zone information [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS network stack and utilities [20230318.083614_builder_junos_203_x75_d42]
+JUNOS libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS libs compat32 [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS 32-bit compatibility [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS sflow mx [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS vmguest [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS crypto [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS boot-ve files [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS na telemetry [20.3X75-D42.21]
+Junos vmguest package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS RPD Telemetry Application [20.3X75-D42.21]
+Redis [20230318.083614_builder_junos_203_x75_d42]
+JUNOS probe utility [20230318.083614_builder_junos_203_x75_d42]
+JUNOS common platform support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Openconfig [20.3X75-D42.21]
+JUNOS mtx network modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS SQL Sync Daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mtx Data Plane Crypto Support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS appidd-mx application-identification daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Linux Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services URL Filter package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TLB Service PIC package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Telemetry [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TCP-LOG [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SSL [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SOFTWIRE [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Stateful Firewall [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RTCOM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RPM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services PCEF package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services NAT [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Mobile Subscriber Service Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services MobileNext Software package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Logging Report Framework package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services LL-PDF Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Jflow Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Deep Packet Inspection package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IPSec [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IDS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS IDP Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services HTTP Content Management package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Crypto [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Captive Portal and Content Delivery Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services COS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS AppId Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Application Level Gateways [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services AACL Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Extension Toolkit [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (ulc-vmx) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (aft) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Juniper Malware Removal Tool (JMRT) [1.0.0+20230318.083614_builder_junos_203_x75_d42]
+JUNOS J-Insight [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Online Documentation [20230318.083614_builder_junos_203_x75_d42]
+JUNOS jail runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS FIPS mode utilities [20230318.083614_builder_junos_203_x75_d42]
+
+root@vMX1_RE>
+
+--- show chassis fpc ---
+show chassis fpc 
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online           Testing   3         0        3      3      3    511        34          0
+  1  Empty           
+  2  Empty           
+  3  Empty           
+  4  Empty           
+  5  Empty           
+  6  Empty           
+  7  Empty           
+  8  Empty           
+  9  Empty           
+ 10  Empty           
+ 11  Empty           
+
+root@vMX1_RE>
+
+--- show system alarms ---
+show system alarms 
+No alarms currently active
+
+root@vMX1_RE>
+
+--- show system core-dumps ---
+show system core-dumps 
+/var/crash/*core*: No such file or directory
+/var/tmp/*core*: No such file or directory
+/var/tmp/pics/*core*: No such file or directory
+/var/crash/kernel.*: No such file or directory
+/var/jails/rest-api/tmp/*core*: No such file or directory
+/tftpboot/corefiles/*core*: No such file or directory
+
+root@vMX1_RE>
+
+
+=== Device: vMX2_RE (10.49.99.54) ===
+--- show interfaces terse ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    down
+ge-0/0/4.16386          up    down
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+ge-0/0/6                up    down
+ge-0/0/6.16386          up    down
+ge-0/0/7                up    down
+ge-0/0/7.16386          up    down
+ge-0/0/8                up    down
+ge-0/0/8.16386          up    down
+ge-0/0/9                up    down
+ge-0/0/9.16386          up    down
+gr-0/0/10               up    up
+ip-0/0/10               up    up
+lt-0/0/10               up    up
+mt-0/0/10               up    up
+pd-0/0/10               up    up
+pe-0/0/10               up    up
+ud-0/0/10               up    up
+ut-0/0/10               up    up
+vt-0/0/10               up    up
+ge-0/1/0                up    down
+ge-0/1/0.16386          up    down
+ge-0/1/1                up    down
+ge-0/1/1.16386          up    down
+ge-0/1/2                up    down
+ge-0/1/2.16386          up    down
+ge-0/1/3                up    down
+ge-0/1/3.16386          up    down
+ge-0/1/4                up    down
+ge-0/1/4.16386          up    down
+ge-0/1/5                up    down
+ge-0/1/5.16386          up    down
+ge-0/1/6                up    down
+ge-0/1/6.16386          up    down
+ge-0/1/7                up    down
+ge-0/1/7.16386          up    down
+ge-0/1/8                up    down
+ge-0/1/8.16386          up    down
+ge-0/1/9                up    down
+ge-0/1/9.16386          up    down
+xe-0/2/0                up    down
+xe-0/2/0.16386          up    down
+xe-0/2/1                up    down
+xe-0/2/1.16386          up    down
+xe-0/3/0                up    down
+xe-0/3/0.16386          up    down
+xe-0/3/1                up    down
+xe-0/3/1.16386          up    down
+cbp0                    up    up
+demux0                  up    up
+dsc                     up    up
+em1                     up    up
+em1.0                   up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::5604:5ff:fe00:37cc/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+em2                     up    up
+em2.32768               up    up   inet     192.168.1.2/24  
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+fxp0                    up    up
+fxp0.0                  up    up   inet     10.49.99.54/19  
+gre                     up    up
+ipip                    up    up
+irb                     up    up
+jsrv                    up    up
+jsrv.1                  up    up   inet     128.0.0.127/2   
+lo0                     up    up
+lo0.0                   up    up   inet     128.49.99.54        --> 0/0
+                                   iso      47.0005.80ff.f800.0000.0108.0001.1280.4909.9054
+                                   inet6    abcd::128:49:99:54
+                                            fe80::5604:a0f:fc31:6336
+lo0.1                   up    up   inet     20.100.0.1          --> 0/0
+lo0.2                   up    up   inet     20.101.0.1          --> 0/0
+                                            20.101.0.2          --> 0/0
+                                   mpls    
+lo0.16384               up    up   inet     127.0.0.1           --> 0/0
+lo0.16385               up    up   inet    
+lsi                     up    up
+mif                     up    up
+mtun                    up    up
+pimd                    up    up
+pime                    up    up
+pip0                    up    up
+pp0                     up    up
+rbeb                    up    up
+tap                     up    up
+vtep                    up    up
+
+root@vMX2_RE>
+
+--- show chassis routing-engine ---
+show chassis routing-engine 
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    DRAM                      4046 MB (4096 MB installed)
+    Memory utilization          11 percent
+    5 sec CPU utilization:
+      User                       3 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      96 percent
+    1 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    5 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    15 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    Model                          RE-VMX
+    Serial ID                      f4ba19a4-d7
+    Start time                     2025-01-20 08:40:11 PST
+    Uptime                         1 day, 23 hours, 3 minutes, 52 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.43       0.41       0.35
+
+root@vMX2_RE>
+
+--- show version ---
+show version 
+Hostname: vMX2_RE
+Model: mx960
+Junos: 20.3X75-D42.21
+JUNOS OS Kernel 64-bit  [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS libs [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS time zone information [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS network stack and utilities [20230318.083614_builder_junos_203_x75_d42]
+JUNOS libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS libs compat32 [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS 32-bit compatibility [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS sflow mx [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS vmguest [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS crypto [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS boot-ve files [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS na telemetry [20.3X75-D42.21]
+Junos vmguest package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS RPD Telemetry Application [20.3X75-D42.21]
+Redis [20230318.083614_builder_junos_203_x75_d42]
+JUNOS probe utility [20230318.083614_builder_junos_203_x75_d42]
+JUNOS common platform support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Openconfig [20.3X75-D42.21]
+JUNOS mtx network modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS SQL Sync Daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mtx Data Plane Crypto Support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS appidd-mx application-identification daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Linux Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services URL Filter package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TLB Service PIC package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Telemetry [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TCP-LOG [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SSL [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SOFTWIRE [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Stateful Firewall [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RTCOM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RPM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services PCEF package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services NAT [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Mobile Subscriber Service Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services MobileNext Software package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Logging Report Framework package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services LL-PDF Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Jflow Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Deep Packet Inspection package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IPSec [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IDS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS IDP Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services HTTP Content Management package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Crypto [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Captive Portal and Content Delivery Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services COS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS AppId Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Application Level Gateways [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services AACL Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Extension Toolkit [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (ulc-vmx) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (aft) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Juniper Malware Removal Tool (JMRT) [1.0.0+20230318.083614_builder_junos_203_x75_d42]
+JUNOS J-Insight [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Online Documentation [20230318.083614_builder_junos_203_x75_d42]
+JUNOS jail runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS FIPS mode utilities [20230318.083614_builder_junos_203_x75_d42]
+
+root@vMX2_RE>
+
+--- show chassis fpc ---
+show chassis fpc 
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online           Testing   4         0        3      3      3    511        34          0
+  1  Empty           
+  2  Empty           
+  3  Empty           
+  4  Empty           
+  5  Empty           
+  6  Empty           
+  7  Empty           
+  8  Empty           
+  9  Empty           
+ 10  Empty           
+ 11  Empty           
+
+root@vMX2_RE>
+
+--- show system alarms ---
+show system alarms 
+No alarms currently active
+
+root@vMX2_RE>
+
+--- show system core-dumps ---
+show system core-dumps 
+/var/crash/*core*: No such file or directory
+/var/tmp/*core*: No such file or directory
+/var/tmp/pics/*core*: No such file or directory
+/var/crash/kernel.*: No such file or directory
+/var/jails/rest-api/tmp/*core*: No such file or directory
+/tftpboot/corefiles/*core*: No such file or directory
+
+root@vMX2_RE>
+
+
+=== Device: vMX3_RE (10.49.99.121) ===
+--- show interfaces terse ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    up
+ge-0/0/4.16386          up    up  
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+ge-0/0/6                up    down
+ge-0/0/6.16386          up    down
+ge-0/0/7                up    down
+ge-0/0/7.16386          up    down
+ge-0/0/8                up    down
+ge-0/0/8.16386          up    down
+ge-0/0/9                up    down
+ge-0/0/9.16386          up    down
+gr-0/0/10               up    up
+ip-0/0/10               up    up
+lt-0/0/10               up    up
+mt-0/0/10               up    up
+pd-0/0/10               up    up
+pe-0/0/10               up    up
+ud-0/0/10               up    up
+ut-0/0/10               up    up
+vt-0/0/10               up    up
+ge-0/1/0                up    down
+ge-0/1/0.16386          up    down
+ge-0/1/1                up    down
+ge-0/1/1.16386          up    down
+ge-0/1/2                up    down
+ge-0/1/2.16386          up    down
+ge-0/1/3                up    down
+ge-0/1/3.16386          up    down
+ge-0/1/4                up    down
+ge-0/1/4.16386          up    down
+ge-0/1/5                up    down
+ge-0/1/5.16386          up    down
+ge-0/1/6                up    down
+ge-0/1/6.16386          up    down
+ge-0/1/7                up    down
+ge-0/1/7.16386          up    down
+ge-0/1/8                up    down
+ge-0/1/8.16386          up    down
+ge-0/1/9                up    down
+ge-0/1/9.16386          up    down
+xe-0/2/0                up    down
+xe-0/2/0.16386          up    down
+xe-0/2/1                up    down
+xe-0/2/1.16386          up    down
+xe-0/3/0                up    down
+xe-0/3/0.16386          up    down
+xe-0/3/1                up    down
+xe-0/3/1.16386          up    down
+cbp0                    up    up
+demux0                  up    up
+dsc                     up    up
+em1                     up    up
+em1.0                   up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::5604:5ff:fe00:82a5/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+em2                     up    up
+em2.32768               up    up   inet     192.168.1.2/24  
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+fxp0                    up    up
+fxp0.0                  up    up   inet     10.49.99.121/19 
+gre                     up    up
+ipip                    up    up
+irb                     up    up
+jsrv                    up    up
+jsrv.1                  up    up   inet     128.0.0.127/2   
+lo0                     up    up
+lo0.0                   up    up   inet     128.49.99.121       --> 0/0
+                                   iso      47.0005.80ff.f800.0000.0108.0001.1280.4909.9121
+                                   inet6    abcd::128:49:99:121
+                                            fe80::5604:a0f:fc31:6379
+lo0.1                   up    up   inet     20.100.0.1          --> 0/0
+lo0.2                   up    up   inet     20.101.0.1          --> 0/0
+                                            20.101.0.2          --> 0/0
+                                   mpls    
+lo0.16384               up    up   inet     127.0.0.1           --> 0/0
+lo0.16385               up    up   inet    
+lsi                     up    up
+mif                     up    up
+mtun                    up    up
+pimd                    up    up
+pime                    up    up
+pip0                    up    up
+pp0                     up    up
+rbeb                    up    up
+tap                     up    up
+vtep                    up    up
+
+root@vMX3_RE>
+
+--- show chassis routing-engine ---
+show chassis routing-engine 
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    DRAM                      4046 MB (4096 MB installed)
+    Memory utilization          10 percent
+    5 sec CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    1 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    5 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    15 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    Model                          RE-VMX
+    Serial ID                      f4ba1a8a-d7
+    Start time                     2025-01-20 08:40:06 PST
+    Uptime                         1 day, 23 hours, 3 minutes, 56 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.54       0.38       0.34
+
+root@vMX3_RE>
+
+--- show version ---
+show version 
+Hostname: vMX3_RE
+Model: mx960
+Junos: 20.3X75-D42.21
+JUNOS OS Kernel 64-bit  [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS libs [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS time zone information [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS network stack and utilities [20230318.083614_builder_junos_203_x75_d42]
+JUNOS libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS libs compat32 [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS 32-bit compatibility [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS sflow mx [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS vmguest [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS crypto [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS boot-ve files [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS na telemetry [20.3X75-D42.21]
+Junos vmguest package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS RPD Telemetry Application [20.3X75-D42.21]
+Redis [20230318.083614_builder_junos_203_x75_d42]
+JUNOS probe utility [20230318.083614_builder_junos_203_x75_d42]
+JUNOS common platform support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Openconfig [20.3X75-D42.21]
+JUNOS mtx network modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS SQL Sync Daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mtx Data Plane Crypto Support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS appidd-mx application-identification daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Linux Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services URL Filter package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TLB Service PIC package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Telemetry [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TCP-LOG [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SSL [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SOFTWIRE [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Stateful Firewall [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RTCOM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RPM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services PCEF package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services NAT [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Mobile Subscriber Service Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services MobileNext Software package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Logging Report Framework package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services LL-PDF Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Jflow Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Deep Packet Inspection package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IPSec [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IDS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS IDP Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services HTTP Content Management package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Crypto [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Captive Portal and Content Delivery Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services COS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS AppId Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Application Level Gateways [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services AACL Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Extension Toolkit [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (ulc-vmx) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (aft) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Juniper Malware Removal Tool (JMRT) [1.0.0+20230318.083614_builder_junos_203_x75_d42]
+JUNOS J-Insight [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Online Documentation [20230318.083614_builder_junos_203_x75_d42]
+JUNOS jail runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS FIPS mode utilities [20230318.083614_builder_junos_203_x75_d42]
+
+root@vMX3_RE>
+
+--- show chassis fpc ---
+show chassis fpc 
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online           Testing   3         0        3      3      3    511        34          0
+  1  Empty           
+  2  Empty           
+  3  Empty           
+  4  Empty           
+  5  Empty           
+  6  Empty           
+  7  Empty           
+  8  Empty           
+  9  Empty           
+ 10  Empty           
+ 11  Empty           
+
+root@vMX3_RE>
+
+--- show system alarms ---
+show system alarms 
+No alarms currently active
+
+root@vMX3_RE>
+
+--- show system core-dumps ---
+show system core-dumps 
+/var/crash/*core*: No such file or directory
+/var/tmp/*core*: No such file or directory
+/var/tmp/pics/*core*: No such file or directory
+/var/crash/kernel.*: No such file or directory
+/var/jails/rest-api/tmp/*core*: No such file or directory
+/tftpboot/corefiles/*core*: No such file or directory
+
+root@vMX3_RE>
+
+
+=== Device: vMX4_RE (10.49.99.126) ===
+--- show interfaces terse ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    down
+ge-0/0/4.16386          up    down
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+ge-0/0/6                up    down
+ge-0/0/6.16386          up    down
+ge-0/0/7                up    down
+ge-0/0/7.16386          up    down
+ge-0/0/8                up    down
+ge-0/0/8.16386          up    down
+ge-0/0/9                up    down
+ge-0/0/9.16386          up    down
+gr-0/0/10               up    up
+ip-0/0/10               up    up
+lt-0/0/10               up    up
+mt-0/0/10               up    up
+pd-0/0/10               up    up
+pe-0/0/10               up    up
+ud-0/0/10               up    up
+ut-0/0/10               up    up
+vt-0/0/10               up    up
+ge-0/1/0                up    down
+ge-0/1/0.16386          up    down
+ge-0/1/1                up    down
+ge-0/1/1.16386          up    down
+ge-0/1/2                up    down
+ge-0/1/2.16386          up    down
+ge-0/1/3                up    down
+ge-0/1/3.16386          up    down
+ge-0/1/4                up    down
+ge-0/1/4.16386          up    down
+ge-0/1/5                up    down
+ge-0/1/5.16386          up    down
+ge-0/1/6                up    down
+ge-0/1/6.16386          up    down
+ge-0/1/7                up    down
+ge-0/1/7.16386          up    down
+ge-0/1/8                up    down
+ge-0/1/8.16386          up    down
+ge-0/1/9                up    down
+ge-0/1/9.16386          up    down
+xe-0/2/0                up    down
+xe-0/2/0.16386          up    down
+xe-0/2/1                up    down
+xe-0/2/1.16386          up    down
+xe-0/3/0                up    down
+xe-0/3/0.16386          up    down
+xe-0/3/1                up    down
+xe-0/3/1.16386          up    down
+cbp0                    up    up
+demux0                  up    up
+dsc                     up    up
+em1                     up    up
+em1.0                   up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::5604:5ff:fe00:51b6/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+em2                     up    up
+em2.32768               up    up   inet     192.168.1.2/24  
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+fxp0                    up    up
+fxp0.0                  up    up   inet     10.49.99.126/19 
+gre                     up    up
+ipip                    up    up
+irb                     up    up
+jsrv                    up    up
+jsrv.1                  up    up   inet     128.0.0.127/2   
+lo0                     up    up
+lo0.0                   up    up   inet     128.49.99.126       --> 0/0
+                                   iso      47.0005.80ff.f800.0000.0108.0001.1280.4909.9126
+                                   inet6    abcd::128:49:99:126
+                                            fe80::5604:a0f:fc31:637e
+lo0.1                   up    up   inet     20.100.0.1          --> 0/0
+lo0.2                   up    up   inet     20.101.0.1          --> 0/0
+                                            20.101.0.2          --> 0/0
+                                   mpls    
+lo0.16384               up    up   inet     127.0.0.1           --> 0/0
+lo0.16385               up    up   inet    
+lsi                     up    up
+mif                     up    up
+mtun                    up    up
+pimd                    up    up
+pime                    up    up
+pip0                    up    up
+pp0                     up    up
+rbeb                    up    up
+tap                     up    up
+vtep                    up    up
+
+root@vMX4_RE>
+
+--- show chassis routing-engine ---
+show chassis routing-engine 
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    DRAM                      4046 MB (4096 MB installed)
+    Memory utilization          10 percent
+    5 sec CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    1 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    5 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    15 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    Model                          RE-VMX
+    Serial ID                      f4ba1b66-d7
+    Start time                     2025-01-20 08:40:08 PST
+    Uptime                         1 day, 23 hours, 3 minutes, 51 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.34       0.35       0.36
+
+root@vMX4_RE>
+
+--- show version ---
+show version 
+Hostname: vMX4_RE
+Model: mx960
+Junos: 20.3X75-D42.21
+JUNOS OS Kernel 64-bit  [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS libs [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS time zone information [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS network stack and utilities [20230318.083614_builder_junos_203_x75_d42]
+JUNOS libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS libs compat32 [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS 32-bit compatibility [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS sflow mx [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS vmguest [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS crypto [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS boot-ve files [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS na telemetry [20.3X75-D42.21]
+Junos vmguest package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS RPD Telemetry Application [20.3X75-D42.21]
+Redis [20230318.083614_builder_junos_203_x75_d42]
+JUNOS probe utility [20230318.083614_builder_junos_203_x75_d42]
+JUNOS common platform support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Openconfig [20.3X75-D42.21]
+JUNOS mtx network modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS SQL Sync Daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mtx Data Plane Crypto Support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS appidd-mx application-identification daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Linux Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services URL Filter package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TLB Service PIC package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Telemetry [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TCP-LOG [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SSL [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SOFTWIRE [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Stateful Firewall [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RTCOM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RPM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services PCEF package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services NAT [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Mobile Subscriber Service Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services MobileNext Software package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Logging Report Framework package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services LL-PDF Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Jflow Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Deep Packet Inspection package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IPSec [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IDS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS IDP Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services HTTP Content Management package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Crypto [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Captive Portal and Content Delivery Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services COS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS AppId Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Application Level Gateways [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services AACL Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Extension Toolkit [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (ulc-vmx) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (aft) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Juniper Malware Removal Tool (JMRT) [1.0.0+20230318.083614_builder_junos_203_x75_d42]
+JUNOS J-Insight [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Online Documentation [20230318.083614_builder_junos_203_x75_d42]
+JUNOS jail runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS FIPS mode utilities [20230318.083614_builder_junos_203_x75_d42]
+
+root@vMX4_RE>
+
+--- show chassis fpc ---
+show chassis fpc 
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online           Testing   3         0        3      3      3    511        34          0
+  1  Empty           
+  2  Empty           
+  3  Empty           
+  4  Empty           
+  5  Empty           
+  6  Empty           
+  7  Empty           
+  8  Empty           
+  9  Empty           
+ 10  Empty           
+ 11  Empty           
+
+root@vMX4_RE>
+
+--- show system alarms ---
+show system alarms 
+No alarms currently active
+
+root@vMX4_RE>
+
+--- show system core-dumps ---
+show system core-dumps 
+/var/crash/*core*: No such file or directory
+/var/tmp/*core*: No such file or directory
+/var/tmp/pics/*core*: No such file or directory
+/var/crash/kernel.*: No such file or directory
+/var/jails/rest-api/tmp/*core*: No such file or directory
+/tftpboot/corefiles/*core*: No such file or directory
+
+root@vMX4_RE>
+
+
+=== Device: vRR1_RE (10.49.99.52) ===
+--- show interfaces terse ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    up
+ge-0/0/4.16386          up    up  
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+ge-0/0/6                up    down
+ge-0/0/6.16386          up    down
+ge-0/0/7                up    down
+ge-0/0/7.16386          up    down
+ge-0/0/8                up    down
+ge-0/0/8.16386          up    down
+ge-0/0/9                up    down
+ge-0/0/9.16386          up    down
+gr-0/0/10               up    up
+ip-0/0/10               up    up
+lt-0/0/10               up    up
+mt-0/0/10               up    up
+pd-0/0/10               up    up
+pe-0/0/10               up    up
+ud-0/0/10               up    up
+ut-0/0/10               up    up
+vt-0/0/10               up    up
+ge-0/1/0                up    down
+ge-0/1/0.16386          up    down
+ge-0/1/1                up    down
+ge-0/1/1.16386          up    down
+ge-0/1/2                up    down
+ge-0/1/2.16386          up    down
+ge-0/1/3                up    down
+ge-0/1/3.16386          up    down
+ge-0/1/4                up    down
+ge-0/1/4.16386          up    down
+ge-0/1/5                up    down
+ge-0/1/5.16386          up    down
+ge-0/1/6                up    down
+ge-0/1/6.16386          up    down
+ge-0/1/7                up    down
+ge-0/1/7.16386          up    down
+ge-0/1/8                up    down
+ge-0/1/8.16386          up    down
+ge-0/1/9                up    down
+ge-0/1/9.16386          up    down
+xe-0/2/0                up    down
+xe-0/2/0.16386          up    down
+xe-0/2/1                up    down
+xe-0/2/1.16386          up    down
+xe-0/3/0                up    down
+xe-0/3/0.16386          up    down
+xe-0/3/1                up    down
+xe-0/3/1.16386          up    down
+cbp0                    up    up
+demux0                  up    up
+dsc                     up    up
+em1                     up    up
+em1.0                   up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::5604:5ff:fe00:268c/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+em2                     up    up
+em2.32768               up    up   inet     192.168.1.2/24  
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+fxp0                    up    up
+fxp0.0                  up    up   inet     10.49.99.52/19  
+gre                     up    up
+ipip                    up    up
+irb                     up    up
+jsrv                    up    up
+jsrv.1                  up    up   inet     128.0.0.127/2   
+lo0                     up    up
+lo0.0                   up    up   inet     128.49.99.52        --> 0/0
+                                   iso      47.0005.80ff.f800.0000.0108.0001.1280.4909.9052
+                                   inet6    abcd::128:49:99:52
+                                            fe80::5604:a0f:fc31:6334
+lo0.1                   up    up   inet     20.100.0.1          --> 0/0
+lo0.2                   up    up   inet     20.101.0.1          --> 0/0
+                                            20.101.0.2          --> 0/0
+                                   mpls    
+lo0.16384               up    up   inet     127.0.0.1           --> 0/0
+lo0.16385               up    up   inet    
+lsi                     up    up
+mif                     up    up
+mtun                    up    up
+pimd                    up    up
+pime                    up    up
+pip0                    up    up
+pp0                     up    up
+rbeb                    up    up
+tap                     up    up
+vtep                    up    up
+
+root@vRR1_RE>
+
+--- show chassis routing-engine ---
+show chassis routing-engine 
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    DRAM                      4046 MB (4096 MB installed)
+    Memory utilization          10 percent
+    5 sec CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     0 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    1 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    5 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    15 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    Model                          RE-VMX
+    Serial ID                      f4ba1c38-d7
+    Start time                     2025-01-20 08:40:04 PST
+    Uptime                         1 day, 23 hours, 3 minutes, 58 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.13       0.34       0.33
+
+root@vRR1_RE>
+
+--- show version ---
+show version 
+Hostname: vRR1_RE
+Model: mx960
+Junos: 20.3X75-D42.21
+JUNOS OS Kernel 64-bit  [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS libs [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS time zone information [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS network stack and utilities [20230318.083614_builder_junos_203_x75_d42]
+JUNOS libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS libs compat32 [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS 32-bit compatibility [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS sflow mx [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS vmguest [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS crypto [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS boot-ve files [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS na telemetry [20.3X75-D42.21]
+Junos vmguest package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS RPD Telemetry Application [20.3X75-D42.21]
+Redis [20230318.083614_builder_junos_203_x75_d42]
+JUNOS probe utility [20230318.083614_builder_junos_203_x75_d42]
+JUNOS common platform support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Openconfig [20.3X75-D42.21]
+JUNOS mtx network modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS SQL Sync Daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mtx Data Plane Crypto Support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS appidd-mx application-identification daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Linux Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services URL Filter package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TLB Service PIC package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Telemetry [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TCP-LOG [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SSL [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SOFTWIRE [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Stateful Firewall [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RTCOM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RPM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services PCEF package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services NAT [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Mobile Subscriber Service Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services MobileNext Software package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Logging Report Framework package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services LL-PDF Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Jflow Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Deep Packet Inspection package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IPSec [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IDS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS IDP Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services HTTP Content Management package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Crypto [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Captive Portal and Content Delivery Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services COS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS AppId Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Application Level Gateways [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services AACL Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Extension Toolkit [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (ulc-vmx) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (aft) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Juniper Malware Removal Tool (JMRT) [1.0.0+20230318.083614_builder_junos_203_x75_d42]
+JUNOS J-Insight [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Online Documentation [20230318.083614_builder_junos_203_x75_d42]
+JUNOS jail runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS FIPS mode utilities [20230318.083614_builder_junos_203_x75_d42]
+
+root@vRR1_RE>
+
+--- show chassis fpc ---
+show chassis fpc 
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online           Testing   4         0        3      3      3    511        34          0
+  1  Empty           
+  2  Empty           
+  3  Empty           
+  4  Empty           
+  5  Empty           
+  6  Empty           
+  7  Empty           
+  8  Empty           
+  9  Empty           
+ 10  Empty           
+ 11  Empty           
+
+root@vRR1_RE>
+
+--- show system alarms ---
+show system alarms 
+No alarms currently active
+
+root@vRR1_RE>
+
+--- show system core-dumps ---
+show system core-dumps 
+/var/crash/*core*: No such file or directory
+/var/tmp/*core*: No such file or directory
+/var/tmp/pics/*core*: No such file or directory
+/var/crash/kernel.*: No such file or directory
+/var/jails/rest-api/tmp/*core*: No such file or directory
+/tftpboot/corefiles/*core*: No such file or directory
+
+root@vRR1_RE>
+
+
+=== Device: vRR2_RE (10.49.115.92) ===
+--- show interfaces terse ---
+show interfaces terse 
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.0              up    up   inet     20.1.1.2/24     
+                                   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     21.1.1.2/24     
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    up
+ge-0/0/4.16386          up    up  
+ge-0/0/5                up    down
+ge-0/0/5.16386          up    down
+ge-0/0/6                up    down
+ge-0/0/6.16386          up    down
+ge-0/0/7                up    down
+ge-0/0/7.16386          up    down
+ge-0/0/8                up    down
+ge-0/0/8.16386          up    down
+ge-0/0/9                up    down
+ge-0/0/9.16386          up    down
+gr-0/0/10               up    up
+ip-0/0/10               up    up
+lt-0/0/10               up    up
+mt-0/0/10               up    up
+pd-0/0/10               up    up
+pe-0/0/10               up    up
+ud-0/0/10               up    up
+ut-0/0/10               up    up
+vt-0/0/10               up    up
+ge-0/1/0                up    down
+ge-0/1/0.16386          up    down
+ge-0/1/1                up    down
+ge-0/1/1.16386          up    down
+ge-0/1/2                up    down
+ge-0/1/2.16386          up    down
+ge-0/1/3                up    down
+ge-0/1/3.16386          up    down
+ge-0/1/4                up    down
+ge-0/1/4.16386          up    down
+ge-0/1/5                up    down
+ge-0/1/5.16386          up    down
+ge-0/1/6                up    down
+ge-0/1/6.16386          up    down
+ge-0/1/7                up    down
+ge-0/1/7.16386          up    down
+ge-0/1/8                up    down
+ge-0/1/8.16386          up    down
+ge-0/1/9                up    down
+ge-0/1/9.16386          up    down
+xe-0/2/0                up    down
+xe-0/2/0.16386          up    down
+xe-0/2/1                up    down
+xe-0/2/1.16386          up    down
+xe-0/3/0                up    down
+xe-0/3/0.16386          up    down
+xe-0/3/1                up    down
+xe-0/3/1.16386          up    down
+cbp0                    up    up
+demux0                  up    up
+dsc                     up    up
+em1                     up    up
+em1.0                   up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::5604:5ff:fe00:7ee5/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+em2                     up    up
+em2.32768               up    up   inet     192.168.1.2/24  
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+fxp0                    up    up
+fxp0.0                  up    up   inet     10.49.115.92/19 
+gre                     up    up
+ipip                    up    up
+irb                     up    up
+jsrv                    up    up
+jsrv.1                  up    up   inet     128.0.0.127/2   
+lo0                     up    up
+lo0.0                   up    up   inet     128.49.115.92       --> 0/0
+                                   iso      47.0005.80ff.f800.0000.0108.0001.1280.4911.5092
+                                   inet6    abcd::128:49:115:92
+                                            fe80::5604:a0f:fc31:735c
+lo0.1                   up    up   inet     20.100.0.1          --> 0/0
+lo0.2                   up    up   inet     20.101.0.1          --> 0/0
+                                            20.101.0.2          --> 0/0
+                                   mpls    
+lo0.16384               up    up   inet     127.0.0.1           --> 0/0
+lo0.16385               up    up   inet    
+lsi                     up    up
+mif                     up    up
+mtun                    up    up
+pimd                    up    up
+pime                    up    up
+pip0                    up    up
+pp0                     up    up
+rbeb                    up    up
+tap                     up    up
+vtep                    up    up
+
+root@vRR2_RE>
+
+--- show chassis routing-engine ---
+show chassis routing-engine 
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    DRAM                      4046 MB (4096 MB installed)
+    Memory utilization          10 percent
+    5 sec CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     0 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    1 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    5 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    15 min CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    Model                          RE-VMX
+    Serial ID                      f4ba1d3c-d7
+    Start time                     2025-01-20 08:40:08 PST
+    Uptime                         1 day, 23 hours, 3 minutes, 57 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.30       0.31       0.31
+
+root@vRR2_RE>
+
+--- show version ---
+show version 
+Hostname: vRR2_RE
+Model: mx960
+Junos: 20.3X75-D42.21
+JUNOS OS Kernel 64-bit  [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS libs [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS time zone information [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS network stack and utilities [20230318.083614_builder_junos_203_x75_d42]
+JUNOS libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS libs compat32 [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS 32-bit compatibility [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS sflow mx [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py extensions [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base2 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS py base [20230318.083614_builder_junos_203_x75_d42]
+JUNOS OS vmguest [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS crypto [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS OS boot-ve files [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS na telemetry [20.3X75-D42.21]
+Junos vmguest package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs compat32 [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx runtime [20230318.083614_builder_junos_203_x75_d42]
+JUNOS RPD Telemetry Application [20.3X75-D42.21]
+Redis [20230318.083614_builder_junos_203_x75_d42]
+JUNOS probe utility [20230318.083614_builder_junos_203_x75_d42]
+JUNOS common platform support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Openconfig [20.3X75-D42.21]
+JUNOS mtx network modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx modules [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx libs [20230318.083614_builder_junos_203_x75_d42]
+JUNOS SQL Sync Daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mtx Data Plane Crypto Support [20230318.083614_builder_junos_203_x75_d42]
+JUNOS daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS mx daemons [20230318.083614_builder_junos_203_x75_d42]
+JUNOS appidd-mx application-identification daemon [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Linux Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Simulation Package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services URL Filter package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TLB Service PIC package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Telemetry [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services TCP-LOG [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SSL [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services SOFTWIRE [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Stateful Firewall [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RTCOM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services RPM [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services PCEF package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services NAT [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Mobile Subscriber Service Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services MobileNext Software package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Logging Report Framework package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services LL-PDF Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Jflow Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Deep Packet Inspection package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IPSec [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services IDS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS IDP Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services HTTP Content Management package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Crypto [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Captive Portal and Content Delivery Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services COS [20230318.083614_builder_junos_203_x75_d42]
+JUNOS AppId Services [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services Application Level Gateways [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Services AACL Container package [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Extension Toolkit [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (ulc-vmx) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Packet Forwarding Engine Support (aft) [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Juniper Malware Removal Tool (JMRT) [1.0.0+20230318.083614_builder_junos_203_x75_d42]
+JUNOS J-Insight [20230318.083614_builder_junos_203_x75_d42]
+JUNOS Online Documentation [20230318.083614_builder_junos_203_x75_d42]
+JUNOS jail runtime [20211117.c779bdc_builder_stable_11-204ab]
+JUNOS FIPS mode utilities [20230318.083614_builder_junos_203_x75_d42]
+
+root@vRR2_RE>
+
+--- show chassis fpc ---
+show chassis fpc 
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online           Testing   3         0        3      3      3    511        34          0
+  1  Empty           
+  2  Empty           
+  3  Empty           
+  4  Empty           
+  5  Empty           
+  6  Empty           
+  7  Empty           
+  8  Empty           
+  9  Empty           
+ 10  Empty           
+ 11  Empty           
+
+root@vRR2_RE>
+
+--- show system alarms ---
+show system alarms 
+No alarms currently active
+
+root@vRR2_RE>
+
+--- show system core-dumps ---
+show system core-dumps 
+/var/crash/*core*: No such file or directory
+/var/tmp/*core*: No such file or directory
+/var/tmp/pics/*core*: No such file or directory
+/var/crash/kernel.*: No such file or directory
+/var/jails/rest-api/tmp/*core*: No such file or directory
+/tftpboot/corefiles/*core*: No such file or directory
+
+root@vRR2_RE>
+
+

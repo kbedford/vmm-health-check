@@ -1,0 +1,433 @@
+
+Command: show bgp summary
+========================================
+Threading mode: BGP I/O
+Default eBGP mode: advertise - accept, receive - accept
+Groups: 1 Peers: 6 Down peers: 5
+Table          Tot Paths  Act Paths Suppressed    History Damp State    Pending
+inet.0               
+                       6          6          0          0          0          0
+bgp.l3vpn.0          
+                       4          4          0          0          0          0
+bgp.l2vpn.0          
+                       0          0          0          0          0          0
+bgp.evpn.0           
+                       0          0          0          0          0          0
+Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn State|#Active/Received/Accepted/Damped...
+11.0.0.102               11      39362      39367       0      33 1w5d 7:06:57 Establ
+  inet.0: 6/6/6/0
+  bgp.l3vpn.0: 4/4/4/0
+  bgp.l2vpn.0: 0/0/0/0
+  bgp.evpn.0: 0/0/0/0
+  vpn_0.inet.0: 4/4/4/0
+  l2vpn_3.l2vpn.0: 0/0/0/0
+  vpn_200.l2vpn.0: 0/0/0/0
+11.0.0.103               11          0          0       0       0 2w0d 15:23:02 Active
+11.0.0.104               11          0          0       0       0 2w0d 15:23:02 Active
+11.0.0.105               11          0          0       0       0 2w0d 15:23:02 Active
+11.0.0.106               11          0          0       0       0 2w0d 15:23:02 Active
+11.0.0.107               11          0          0       0       0 2w0d 15:23:02 Active
+
+
+Command: show chassis alarms
+========================================
+No alarms currently active
+
+
+Command: show chassis fpc
+========================================
+                     Temp  CPU Utilization (%)   CPU Utilization (%)  Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      1min   5min   15min  DRAM (MB) Heap     Buffer
+  0  Online           Testing  12         0        6      4      4    511        34          0
+  1  Empty           
+  2  Empty           
+  3  Empty           
+  4  Empty           
+  5  Empty           
+  6  Empty           
+  7  Empty           
+  8  Empty           
+  9  Empty           
+ 10  Empty           
+ 11  Empty           
+
+
+Command: show chassis hardware
+========================================
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                VM670A4B5367      MX960
+Midplane        
+Routing Engine 0                       dbdb2406-88       RE-VMX
+CB 0                                                     VMX SCB
+FPC 0                     BUILTIN      BUILTIN           Virtual FPC
+  CPU            Rev. 1.0 RIOT-LITE    BUILTIN          
+  MIC 0                                                  Virtual 20x 1GE(LAN) SFP
+    PIC 0                 BUILTIN      BUILTIN           Virtual 10x 1GE(LAN) SFP
+    PIC 1                 BUILTIN      BUILTIN           Virtual 10x 1GE(LAN) SFP
+  MIC 1                                                  Virtual 4x 10GE(LAN) XFP
+    PIC 2                 BUILTIN      BUILTIN           Virtual 2x 10GE(LAN) XFP
+    PIC 3                 BUILTIN      BUILTIN           Virtual 2x 10GE(LAN) XFP
+
+
+Command: show chassis routing-engine
+========================================
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    DRAM                      4042 MB (4096 MB installed)
+    Memory utilization          16 percent
+    5 sec CPU utilization:
+      User                      48 percent
+      Background                 0 percent
+      Kernel                     3 percent
+      Interrupt                  0 percent
+      Idle                      49 percent
+    1 min CPU utilization:
+      User                      22 percent
+      Background                 0 percent
+      Kernel                     2 percent
+      Interrupt                  0 percent
+      Idle                      76 percent
+    5 min CPU utilization:
+      User                       7 percent
+      Background                 0 percent
+      Kernel                     2 percent
+      Interrupt                  0 percent
+      Idle                      91 percent
+    15 min CPU utilization:
+      User                       6 percent
+      Background                 0 percent
+      Kernel                     2 percent
+      Interrupt                  0 percent
+      Idle                      92 percent
+    Model                          RE-VMX
+    Serial ID                      dbdb2406-88
+    Start time                     2024-10-12 10:18:03 UTC
+    Uptime                         14 days, 15 hours, 27 minutes, 7 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.83       0.53       0.46
+
+
+Command: show interfaces terse
+========================================
+Interface               Admin Link Proto    Local                 Remote
+ge-0/0/0                up    up
+ge-0/0/0.32767          up    up   multiservice
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+ge-0/0/1                up    up
+ge-0/0/1.0              up    up   inet     10.0.21.1/24    
+                                   multiservice
+ge-0/0/2                up    up
+ge-0/0/2.16386          up    up  
+ge-0/0/3                up    up
+ge-0/0/3.16386          up    up  
+ge-0/0/4                up    up
+ge-0/0/4.16386          up    up  
+ge-0/0/5                up    up
+ge-0/0/5.0              up    up   inet     11.101.102.1/30 
+                                   iso     
+                                   mpls    
+                                   multiservice
+ge-0/0/5.3              up    up   ccc     
+ge-0/0/5.200            up    up   vpls    
+ge-0/0/5.301            up    up   inet     31.0.0.1/24     
+                                   multiservice
+ge-0/0/5.1002           up    up   inet     2.101.104.1/30  
+                                   multiservice
+ge-0/0/5.32767          up    up   multiservice
+ge-0/0/6                up    up
+ge-0/0/6.0              up    up   inet     11.111.112.1/30 
+                                   iso     
+                                   mpls    
+                                   multiservice
+ge-0/0/7                up    up
+ge-0/0/7.16386          up    up  
+ge-0/0/8                up    up
+ge-0/0/8.0              up    up   inet     172.16.18.101/24
+                                   multiservice
+ge-0/0/9                up    up
+ge-0/0/9.0              up    up   inet     172.16.21.101/24
+                                   multiservice
+ge-0/1/0                up    up
+ge-0/1/0.0              up    up   inet     172.17.18.101/24
+                                   multiservice
+ge-0/1/1                up    up
+ge-0/1/1.0              up    up   inet     11.101.105.1/30 
+                                   iso     
+                                   inet6    2001:db8:15::1/64
+                                            fe80::2e6b:f5ff:feaf:bf2a/64
+                                   mpls    
+                                   multiservice
+ge-0/1/2                up    up
+ge-0/1/2.16386          up    up  
+ge-0/1/3                up    up
+ge-0/1/3.16386          up    up  
+ge-0/1/4                up    up
+ge-0/1/4.16386          up    up  
+ge-0/1/5                up    up
+ge-0/1/5.16386          up    up  
+ge-0/1/6                up    up
+ge-0/1/6.16386          up    up  
+ge-0/1/7                up    up
+ge-0/1/7.16386          up    up  
+ge-0/1/8                up    up
+ge-0/1/8.16386          up    up  
+ge-0/1/9                up    up
+ge-0/1/9.16386          up    up  
+xe-0/2/0                up    up
+xe-0/2/0.16386          up    up  
+xe-0/2/1                up    up
+xe-0/2/1.16386          up    up  
+xe-0/3/0                up    up
+xe-0/3/0.16386          up    up  
+xe-0/3/1                up    up
+xe-0/3/1.16386          up    up  
+cbp0                    up    up
+demux0                  up    up
+dsc                     up    up
+em1                     up    up
+em1.0                   up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::5604:5ff:fe00:6bc8/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+em2                     up    up
+em2.32768               up    up   inet     192.168.1.2/24  
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+fxp0                    up    up
+fxp0.0                  up    up   inet     10.49.111.115/19
+gre                     up    up
+ipip                    up    up
+irb                     up    up
+jsrv                    up    up
+jsrv.1                  up    up   inet     128.0.0.127/2   
+lo0                     up    up
+lo0.0                   up    up   inet     11.0.0.101          --> 0/0
+                                            11.0.102.101        --> 0/0
+                                            11.0.103.101        --> 0/0
+                                            11.0.104.101        --> 0/0
+                                            11.0.105.101        --> 0/0
+                                            11.0.106.101        --> 0/0
+                                            11.0.107.101        --> 0/0
+                                            11.255.102.101      --> 0/0
+                                            11.255.103.101      --> 0/0
+                                            11.255.104.101      --> 0/0
+                                            11.255.105.101      --> 0/0
+                                            11.255.106.101      --> 0/0
+                                            11.255.107.101      --> 0/0
+                                   iso      49.0011.0110.0000.0101
+                                   inet6    2001:db8:1:255::1
+                                            fe80::5604:a0f:fc31:6f73
+                                   mpls    
+lo0.1                   up    up   inet     10.0.102.101        --> 0/0
+                                            10.0.103.101        --> 0/0
+                                            10.0.104.101        --> 0/0
+lo0.16384               up    up   inet     127.0.0.1           --> 0/0
+lo0.16385               up    up   inet    
+lsi                     up    up
+lsi.0                   up    up   inet    
+                                   iso     
+                                   inet6   
+mif                     up    up
+mtun                    up    up
+pimd                    up    up
+pime                    up    up
+pip0                    up    up
+pp0                     up    up
+rbeb                    up    up
+tap                     up    up
+vtep                    up    up
+
+
+Command: show isis adjacency
+========================================
+Interface             System         L State        Hold (secs) SNPA
+ge-0/0/5.0            vmx102         2  Up                   23
+ge-0/0/6.0            vmx102         2  Up                   23
+
+
+Command: show ospf neighbor
+========================================
+OSPF instance is not running
+
+
+Command: show rsvp neighbor
+========================================
+RSVP neighbor: 0 learned
+
+
+Command: show system buffers
+========================================
+830/27760/28590 mbufs in use (current/cache/total)
+784/26422/27206/250282 mbuf clusters in use (current/cache/total/max)
+781/24266 mbuf+clusters out of packet secondary zone in use (current/cache)
+0/41/41/125140 4k (page size) jumbo clusters in use (current/cache/total/max)
+0/0/0/37078 9k (page size) jumbo clusters in use (current/cache/total/max)
+0/0/0/20856 16k (page size) jumbo clusters in use (current/cache/total/max)
+1776K/59948K/61724K bytes allocated to network (current/cache/total)
+0/0/0 requests for mbufs denied (mbufs/clusters/mbuf+clusters)
+0/0/0 requests for jumbo clusters denied (4k/9k/16k)
+0 requests for sfbufs denied
+0 requests for sfbufs delayed
+0 requests for I/O initiated by sendfile
+
+
+Command: show system commit
+========================================
+0   2024-10-27 01:36:00 UTC by root via cli
+1   2024-10-27 00:49:37 UTC by ken via cli
+2   2024-10-27 00:49:02 UTC by ken via cli
+3   2024-10-16 13:50:10 UTC by root via cli
+4   2024-10-16 13:30:18 UTC by root via cli
+5   2024-10-16 12:55:17 UTC by root via cli
+6   2024-10-16 12:54:03 UTC by root via cli
+7   2024-10-16 12:08:00 UTC by root via cli
+8   2024-10-16 12:07:04 UTC by root via cli
+9   2024-10-16 12:05:01 UTC by root via cli
+10  2024-10-16 12:03:52 UTC by root via cli
+11  2024-10-16 12:01:12 UTC by root via cli
+12  2024-10-16 09:35:32 UTC by root via cli
+13  2024-10-16 09:18:51 UTC by root via cli
+14  2024-10-15 15:17:09 UTC by root via cli
+15  2024-10-15 15:14:56 UTC by root via cli
+16  2024-10-15 15:05:28 UTC by root via cli
+17  2024-10-15 15:01:52 UTC by root via cli
+18  2024-10-15 14:47:18 UTC by root via cli
+19  2024-10-15 14:34:53 UTC by root via cli
+20  2024-10-15 14:30:10 UTC by root via cli
+21  2024-10-14 13:56:53 UTC by root via cli
+22  2024-10-14 09:15:36 UTC by root via cli
+23  2024-10-13 23:08:29 UTC by root via cli
+24  2024-10-12 11:52:10 UTC by northstar via netconf
+    Bootstrap Config Commit, JobId: f876be0a-6e67-4600-a9f1-d2171bf4d253
+25  2024-10-12 10:21:43 UTC by regress via cli
+26  2024-10-12 10:17:32 UTC by regress via cli
+27  2024-10-12 10:15:59 UTC by regress via cli
+28  2024-10-12 10:11:14 UTC by root via other
+
+
+Command: show system core-dumps
+========================================
+/var/crash/*core*: No such file or directory
+/var/tmp/*core*: No such file or directory
+/var/tmp/pics/*core*: No such file or directory
+/var/crash/kernel.*: No such file or directory
+/var/jails/rest-api/tmp/*core*: No such file or directory
+/tftpboot/corefiles/*core*: No such file or directory
+
+
+Command: show system uptime
+========================================
+Current time: 2024-10-27 01:46:06 UTC
+Time Source:  NTP CLOCK 
+System booted: 2024-10-12 10:18:03 UTC (2w0d 15:28 ago)
+Protocols started: 2024-10-12 10:19:01 UTC (2w0d 15:27 ago)
+Last configured: 2024-10-27 01:36:00 UTC (00:10:06 ago) by root
+ 1:46AM  up 14 days, 15:28, 1 users, load averages: 1.22, 0.69, 0.52
+
+
+Command: show version
+========================================
+Hostname: vmx101
+Model: mx960
+Junos: 22.1R1.10
+JUNOS OS Kernel 64-bit  [20220221.2b3c81a_builder_stable_12_221]
+JUNOS OS libs [20220221.2b3c81a_builder_stable_12_221]
+JUNOS OS runtime [20220221.2b3c81a_builder_stable_12_221]
+JUNOS OS time zone information [20220221.2b3c81a_builder_stable_12_221]
+JUNOS network stack and utilities [20220316.080819_builder_junos_221_r1]
+JUNOS libs [20220316.080819_builder_junos_221_r1]
+JUNOS OS libs compat32 [20220221.2b3c81a_builder_stable_12_221]
+JUNOS OS 32-bit compatibility [20220221.2b3c81a_builder_stable_12_221]
+JUNOS libs compat32 [20220316.080819_builder_junos_221_r1]
+JUNOS runtime [20220316.080819_builder_junos_221_r1]
+JUNOS Packet Forwarding Engine Simulation Package [20220316.080819_builder_junos_221_r1]
+JUNOS sflow mx [20220316.080819_builder_junos_221_r1]
+JUNOS py extensions [20220316.080819_builder_junos_221_r1]
+JUNOS py base [20220316.080819_builder_junos_221_r1]
+JUNOS OS vmguest [20220221.2b3c81a_builder_stable_12_221]
+JUNOS OS crypto [20220221.2b3c81a_builder_stable_12_221]
+JUNOS OS boot-ve files [20220221.2b3c81a_builder_stable_12_221]
+JUNOS na telemetry [22.1R1.10]
+Junos vmguest package [20220316.080819_builder_junos_221_r1]
+JUNOS mx libs compat32 [20220316.080819_builder_junos_221_r1]
+JUNOS mx runtime [20220316.080819_builder_junos_221_r1]
+JUNOS RPD Telemetry Application [22.1R1.10]
+JUNOS Routing mpls-oam-basic [20220316.080819_builder_junos_221_r1]
+JUNOS Routing mpls-oam-advanced [20220316.080819_builder_junos_221_r1]
+JUNOS Routing lsys [20220316.080819_builder_junos_221_r1]
+JUNOS Routing controller-internal [20220316.080819_builder_junos_221_r1]
+JUNOS Routing controller-external [20220316.080819_builder_junos_221_r1]
+JUNOS Routing 32-bit Compatible Version [20220316.080819_builder_junos_221_r1]
+JUNOS Routing aggregated [20220316.080819_builder_junos_221_r1]
+Redis [20220316.080819_builder_junos_221_r1]
+JUNOS probe utility [20220316.080819_builder_junos_221_r1]
+JUNOS common platform support [20220316.080819_builder_junos_221_r1]
+JUNOS Openconfig [22.1R1.10]
+JUNOS mtx network modules [20220316.080819_builder_junos_221_r1]
+JUNOS modules [20220316.080819_builder_junos_221_r1]
+JUNOS mx modules [20220316.080819_builder_junos_221_r1]
+JUNOS mx libs [20220316.080819_builder_junos_221_r1]
+JUNOS L2 RSI Scripts [20220316.080819_builder_junos_221_r1]
+JUNOS SQL Sync Daemon [20220316.080819_builder_junos_221_r1]
+JUNOS mtx Data Plane Crypto Support [20220316.080819_builder_junos_221_r1]
+JUNOS daemons [20220316.080819_builder_junos_221_r1]
+JUNOS mx daemons [20220316.080819_builder_junos_221_r1]
+JUNOS Broadband Edge User Plane Apps [22.1R1.10]
+JUNOS appidd-mx application-identification daemon [20220316.080819_builder_junos_221_r1]
+JUNOS Simulation Linux Package [20220316.080819_builder_junos_221_r1]
+JUNOS Simulation Package [20220316.080819_builder_junos_221_r1]
+JUNOS Services URL Filter package [20220316.080819_builder_junos_221_r1]
+JUNOS Services TLB Service PIC package [20220316.080819_builder_junos_221_r1]
+JUNOS Services Telemetry [20220316.080819_builder_junos_221_r1]
+JUNOS Services TCP-LOG [20220316.080819_builder_junos_221_r1]
+JUNOS Services SSL [20220316.080819_builder_junos_221_r1]
+JUNOS Services SOFTWIRE [20220316.080819_builder_junos_221_r1]
+JUNOS Services Stateful Firewall [20220316.080819_builder_junos_221_r1]
+JUNOS Services RTCOM [20220316.080819_builder_junos_221_r1]
+JUNOS Services RPM [20220316.080819_builder_junos_221_r1]
+JUNOS Services PCEF package [20220316.080819_builder_junos_221_r1]
+JUNOS Services NAT [20220316.080819_builder_junos_221_r1]
+JUNOS Services Mobile Subscriber Service Container package [20220316.080819_builder_junos_221_r1]
+JUNOS Services MobileNext Software package [20220316.080819_builder_junos_221_r1]
+JUNOS Services Logging Report Framework package [20220316.080819_builder_junos_221_r1]
+JUNOS Services LL-PDF Container package [20220316.080819_builder_junos_221_r1]
+JUNOS Services Jflow Container package [20220316.080819_builder_junos_221_r1]
+JUNOS Services Deep Packet Inspection package [20220316.080819_builder_junos_221_r1]
+JUNOS Services IPSec [20220316.080819_builder_junos_221_r1]
+JUNOS Services IDS [20220316.080819_builder_junos_221_r1]
+JUNOS IDP Services [20220316.080819_builder_junos_221_r1]
+JUNOS Services HTTP Content Management package [20220316.080819_builder_junos_221_r1]
+JUNOS Services DNS Filter package (i386) [20220316.080819_builder_junos_221_r1] 
+JUNOS Services Crypto [20220316.080819_builder_junos_221_r1]
+JUNOS Services Captive Portal and Content Delivery Container package [20220316.080819_builder_junos_221_r1]
+JUNOS Services COS [20220316.080819_builder_junos_221_r1]
+JUNOS AppId Services [20220316.080819_builder_junos_221_r1]
+JUNOS Services Application Level Gateways [20220316.080819_builder_junos_221_r1]
+JUNOS Services AACL Container package [20220316.080819_builder_junos_221_r1]
+JUNOS Extension Toolkit [20220316.080819_builder_junos_221_r1]
+JUNOS Juniper Malware Removal Tool (JMRT) [1.0.0+20220316.080819_builder_junos_221_r1]
+JUNOS J-Insight [20220316.080819_builder_junos_221_r1]
+JUNOS Online Documentation [20220316.080819_builder_junos_221_r1]
+JUNOS jail runtime [20220221.2b3c81a_builder_stable_12_221]
+JUNOS dsa dsa [22.1R1.10]
+
